@@ -1,0 +1,5 @@
+﻿  Lista.cpp
+  T1.cpp
+  Generating Code...
+D:\Repos-Github\EDD202S-201801043\Tareas\T1\Lista.cpp(81): warning C4715: 'Lista::buscar': not all control paths return a value
+  T1.vcxproj -> D:\Repos-Github\EDD202S-201801043\Tareas\T1\Debug\T1.exe
