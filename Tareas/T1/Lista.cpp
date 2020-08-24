@@ -90,6 +90,26 @@ void Lista::imprimir() {
 	}
 }
 
+Lista* Lista::clonar() {
+	if (this->cabeza == NULL) {
+		cout << "No hay elementos en la lista" << endl;
+	}
+	else
+	{
+		Lista* listaClon = new Lista();
+		NodoEstudiante* aux = this->cabeza;
+
+		while (aux != NULL)
+		{
+			NodoEstudiante* nodoInsertar = new NodoEstudiante(aux->getNombre(), aux->getCarne());
+			listaClon->agregar(nodoInsertar);
+			aux = aux->getSiguiente();
+		}
+
+		return listaClon;
+	}
+}
+
 //destructor
 Lista::~Lista() {
 	NodoEstudiante* aux = this->cabeza;

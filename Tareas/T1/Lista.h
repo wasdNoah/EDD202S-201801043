@@ -20,4 +20,6 @@ public:
 	void eliminar(int carne);
 	void imprimir();
 	NodoEstudiante* buscar(int carne);
+
+	Lista* clonar();
 };

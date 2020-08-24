@@ -9,6 +9,7 @@ void menuPrincipal(Lista* lista);
 int main()
 {
     Lista* lista = new Lista();
+    Lista* copia;
     NodoEstudiante* est1, * est2, * est3, *est4;
 
     //creando nodos
@@ -22,17 +23,24 @@ int main()
     lista->agregar(est3);
 
     lista->imprimir();
+    cout << endl;
+    cout << "-----------Copiando lista-----------" << endl;
+    copia = lista->clonar();
+    copia->imprimir();
+
+    cout << endl;
 
     cout << "---------------Buscando nodos--------------" << endl;
     est4 = lista->buscar(201801043);
+    cout << endl;
     cout << "Se encontro: " << est4->getNombre() << " con Carne: " << est4->getCarne() << endl;
-
+    cout << endl;
     cout << "------------Eliminando nodos------------" << endl;
     lista->eliminar(201801043);
     lista->imprimir();
 
     //menuPrincipal(lista);
-
+    cout << endl;
     delete lista;
 
     return 0;
