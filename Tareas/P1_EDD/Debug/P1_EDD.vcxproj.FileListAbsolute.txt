@@ -1,0 +1,2 @@
+D:\visual_studio_projects\P1_EDD\Debug\P1_EDD.exe
+D:\visual_studio_projects\P1_EDD\Debug\P1_EDD.pdb
